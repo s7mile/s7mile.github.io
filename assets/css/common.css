@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* --------------------------------------------------
+[S] Reset
+-------------------------------------------------- */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*{box-sizing:inherit}*:before,*:after{box-sizing:inherit}img,embed,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+.screen_out {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	text-indent: -9999em;
+	font-size: 1px;
+}
+/* [E] Reset */
+
+/* --------------------------------------------------
+[S] intro
+-------------------------------------------------- */
+section#intro {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	width: 100%; 
+	height: calc(100vh - 100px);
+	background: -moz-linear-gradient(45deg, #7182ff 0%, #a987f1 29%, #47bcff 66%, #0079ed 100%);
+    background: -webkit-linear-gradient(45deg, #7182ff 0%,#a987f1 29%,#47bcff 66%,#0079ed 100%);
+    background: linear-gradient(45deg, #7182ff 0%,#a987f1 29%,#47bcff 66%,#0079ed 100%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+section#intro:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* background: url('data:image/svg+xml;utf8,<svg class="rh-pattern storage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="60" width="60"><path d="m 58,60 2,-2 M 18,0 16,2 M 38,0 36,2 M 58,0 56,2 m 4,6 -4,4 m 4,6 -4,4 m 4,16 -4,4 M 6,52 -2,60 M 46,12 36,22 M 6,12 0,18 M 6,32 0,38 M 26,12 16,22 M 26,32 16,42 M 46,32 36,42 m -10,10 -8,8 m 28,-8 -8,8 M 60,48 48,60 M 60,28 28,60 M 56,12 8,60 M 48,0 0,48 m 46,-6 10,0 0,10 -10,0 z m -20,0 10,0 0,10 -10,0 z m -20,0 10,0 0,10 -10,0 z m 40,-20 10,0 0,10 -10,0 z m -20,0 10,0 0,10 -10,0 z M 6,22 16,22 16,32 6,32 Z M 28,0 0,28 M 46,2 56,2 56,12 46,12 Z M 26,2 36,2 36,12 26,12 Z M 6,2 16,2 16,12 6,12 Z M 8,0 0,8" style="fill:none;stroke:#fff;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:0" /></svg>'); */
+	background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.intro_txt {
+	margin-top: -10%;
+	text-align: center;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5em;
+}
+.intro_txt .highlight {
+	font-weight: 900;
+	color: #ffcae0
+}
+/* [E] intro */
+
+/* --------------------------------------------------
+[S] about
+-------------------------------------------------- */
+#about {text-align: center;}
+#about svg {
+	position: relative;
+	z-index: 1;
+	margin-top: -150px;
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	background: #fff;
+
+}
+/* [E] about */
+
+/* --------------------------------------------------
+[S] Footer
+-------------------------------------------------- */
+footer {
+    position: relative;
+	padding: 70px 0 50px 0;
+	background: #7182ff
+}
+footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+footer li a {
+	display: block;
+	cursor: pointer;
+    position: relative;
+    width: 55px;
+    height: 55px;
+	line-height: 55px;
+	margin: 0 15px;
+    text-align: center;
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+    font-size: 18pt;
+	transition: all 0.3s;
+}
+footer li a:hover,
+footer li a:focus {
+	background: rgba(0, 0, 0, 0.4);
+}
+footer .btn_top {
+	z-index: 1;
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -25px;
+    width: 47px;
+	height: 50px;
+	line-height: 40px;
+    margin: 0 auto;
+    font-size: 30px;
+	background: #a987f1;
+	border: 0;
+	color: #fff;
+}
+footer .copyright {
+    margin-top: 35px;
+	color: #fff;
+	text-align: center;
+	font-size: 10pt;
+}
+footer .copyright span {
+	color: #ffcae0
+}
+/* [E] footer */
+
+/* --------------------------------------------------
+[S] Keyframes
+-------------------------------------------------- */
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+/* [E] Keyframes */
