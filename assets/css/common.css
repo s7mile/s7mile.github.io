@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 
 /* --------------------------------------------------
 [S] Reset
@@ -13,6 +14,15 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
 	text-indent: -9999em;
 	font-size: 1px;
 }
+* {
+	font-family: 'Apple SD Gothic Neo', AppleSDGothicNeo, 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+}
+a {
+	color: #3e384a;
+	text-decoration: none;
+}
+a:hover, a:focus {text-decoration: underline}
 /* [E] Reset */
 
 /* --------------------------------------------------
@@ -61,7 +71,11 @@ section#intro:after {
 /* --------------------------------------------------
 [S] about
 -------------------------------------------------- */
-#about {text-align: center;}
+#about {
+	text-align: center;
+	color: #3e384a;
+	font-size: 15px;
+}
 #about svg {
 	position: relative;
 	z-index: 1;
@@ -72,15 +86,81 @@ section#intro:after {
 	background: #fff;
 
 }
+#about .txt_name {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 30px;	
+}
+#about .txt_name span {
+	display: block;
+	font-size: 15px;
+}
 /* [E] about */
+
+/* --------------------------------------------------
+[S] history
+-------------------------------------------------- */
+#history {
+    width: 850px;
+	margin: 30px auto 0;
+    padding: 40px 0 100px;
+}
+#history li em {
+    display: inline-block;
+    height: 14px;
+    padding: 1px 2px 0;
+    border-radius: 3px;
+    font-size: 8pt !important;
+    font-style: normal;
+    text-align: center;
+	text-transform: uppercase;
+}
+em.d {
+	border: 1px solid #9f4aff;
+	color: #9f4aff;
+}
+em.f {
+	border: 1px solid #ff9c00;
+	color: #ff9c00;
+}
+em.b {
+	border: 1px solid #00a8ff;
+	color: #00a8ff;
+}
+#history div {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+#history h4, #history ul {
+	float: left;
+	text-align: left;
+}
+#history h4 {
+	width: 170px;
+	font-size: 18pt;
+	font-weight: 400;
+	letter-spacing: -1px;
+}
+#history li {
+	margin: 5px 0;
+	font-size: 12pt;
+}
+#history li a {font-size: 12pt;}
+#history li span {
+	display: inline-block;
+	width: 170px;
+}
+/* [E] history */
 
 /* --------------------------------------------------
 [S] Footer
 -------------------------------------------------- */
 footer {
-    position: relative;
+	position: relative;
+	margin-top: 50px;
 	padding: 70px 0 50px 0;
-	background: #7182ff
+	background: #7182ff;
 }
 footer ul {
 	display: flex;
@@ -94,7 +174,7 @@ footer li a {
     position: relative;
     width: 55px;
     height: 55px;
-	line-height: 55px;
+	line-height: 57px;
 	margin: 0 15px;
     text-align: center;
 	background: rgba(0, 0, 0, 0.2);
