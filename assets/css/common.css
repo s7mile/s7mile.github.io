@@ -251,3 +251,34 @@ footer .copyright span {
 	}
 }
 /* [E] Keyframes */
+
+/* --------------------------------------------------
+[S] media query
+-------------------------------------------------- */
+@media all and (max-width: 768px) {
+	.intro_txt {width: 270px;}
+	#history {
+		width: calc(100vw - 30px);
+	}
+
+	#history li {
+		margin: 5px 0 0;
+		padding-top: 6px;
+		border-top: 1px dashed #eee;
+	}
+	#history li:first-child {
+		border-top: 0;
+		margin-top: 10px;
+	}
+
+	#history li span{ 
+		display: block;
+		font-size: 10pt;
+		color: #555;
+	}
+
+	#history h4 {
+		width: 100%;
+	}
+}
+/* [E] media query */
