@@ -56,11 +56,11 @@ section#intro:after {
 }
 
 .intro_txt {
-	margin-top: -10%;
+	margin-top: -7%;
 	text-align: center;
 	color: #fff;
 	font-family: 'Raleway', sans-serif;
-	font-size: 6em;
+	font-size: 4em;
 }
 .intro_txt .highlight {
 	font-weight: 900;
