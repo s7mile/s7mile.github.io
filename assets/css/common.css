@@ -109,7 +109,7 @@ section#intro:after {
     display: inline-block;
     padding: 1px 2px 0;
     border-radius: 3px;
-    font-size: 8pt !important;
+    font-size: 9pt !important;
     font-style: normal;
     text-align: center;
 	text-transform: uppercase;
@@ -119,8 +119,8 @@ em.d {
 	color: #9f4aff;
 }
 em.f {
-	border: 1px solid #ff9c00;
-	color: #ff9c00;
+	border: 1px solid #ff9100;
+	color: #ff9100;
 }
 em.b {
 	border: 1px solid #00a8ff;
@@ -149,6 +149,12 @@ em.b {
 #history li span {
 	display: inline-block;
 	width: 170px;
+}
+#history .work li {
+	display: flex;
+}
+#history .work li div {
+	margin-bottom: 5px;
 }
 /* [E] history */
 
